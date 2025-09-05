@@ -1,43 +1,49 @@
 # quantum-geoseis
 
-**quantum-geoseis** is an open-source research platform for quantum intelligence in seismic inversion and reservoir characterization, based on [Qiskit](https://qiskit.org/) and licensed under Apache 2.0.
+**quantum-geoseis** is an open-source platform for quantum intelligence in seismic inversion and geophysical data science, based on [Qiskit](https://qiskit.org/) and licensed under Apache 2.0.
 
-This repository provides code and experiments from the study:  
+This platform is designed to accelerate the integration of quantum machine learning with geophysical inversion, supporting reproducible research, benchmarking, and community-driven innovation.
+
+This repository provides core codes, tutorials, and benchmarks from:
+
 **"Application of Quantum Neural Networks and Variational Quantum Regression in Seismic Inversion"**  
 Zhen Liu\*, Junhua Zhang. China University of Petroleum (East China)
 
 📄 **[Download the paper (PDF)](https://imageevent.aapg.org/portals/26/abstracts/2025/4301526.pdf)**  
 *(Presented at IMAGE 2025 Conference, Houston, US)*  
-**This research was financially supported by the SEG (Society of Exploration Geophysicists) Travel Grant. We gratefully acknowledge the support of SEG.**
+*Supported by the SEG (Society of Exploration Geophysicists) Travel Grant. Grateful thanks to SEG!*
+
+---
 
 ## Overview
 
-This project explores the application of **Quantum Neural Networks (QNN)** and **Variational Quantum Regression (VQR)** in seismic inversion, leveraging quantum computing’s advantages in superposition, entanglement, and interference.  
-QNN utilizes parameterized quantum circuits to capture complex relationships in seismic data, while VQR targets regression tasks with quantum-enhanced modeling.
+`quantum-geoseis` provides a unified platform for:
 
-- Experiments are implemented via Qiskit on classical simulators and are successfully executed on IBM Quantum hardware (Kyiv, Brisbane, Sherbrooke, etc.).
-- Both QNN and VQR are tested on synthetic seismic data from the Marmousi2 model.
-- Results show strong data-fitting and promising generalization, demonstrating the feasibility of quantum intelligence for geophysical inversion.
+- **Quantum Neural Networks (QNN):** Variational quantum circuits for regression, classification, and geophysical data modeling.
+- **Variational Quantum Regression (VQR):** Specialized quantum regression pipelines for seismic inversion.
+- **Hybrid & Modular Workflows:** Easily integrate quantum-classical hybrid algorithms and extend to new geophysical applications.
+- **IBM Quantum Hardware Support:** All circuits can be executed on real IBM Quantum devices (tested on IBM Quantum Kyiv, Brisbane, Sherbrooke, and more).
 
-## IBM Quantum Hardware Support
+⚠️ **Warning:** Please ensure your IBM Quantum account has enough compute time credits; otherwise, premium access may cost up to **$96 USD per minute**.
 
-All core quantum circuits in this repository can be executed on real IBM Quantum devices (tested on IBM Quantum Kyiv, Brisbane, Sherbrooke, and more).  
-See the tutorials for practical instructions on running your seismic inversion tasks on IBM’s cloud-based quantum hardware.
+---
 
-⚠️ **Warning:** Please ensure your account has enough compute time credits; otherwise, premium access may cost up to **$96 USD per minute**.
+## Platform Features
 
-## Key Features
+- **Extensible Modules:** Easily add new quantum models, geophysical workflows, or benchmarks.
+- **Community-driven:** Contributions, issues, and collaborative development are highly encouraged.
+- **Reproducible Experiments:** All main results can be reproduced using our provided notebooks and datasets.
+- **Benchmarks:** Standardized seismic inversion tasks based on normalized Marmousi2 synthetic data.
 
-- **Quantum Neural Networks (QNN):** Variational quantum circuits that emulate classical neural networks, adapted for regression and data modeling.
-- **Variational Quantum Regression (VQR):** Quantum circuit architectures optimized for regression, with a focus on feature encoding and nonlinear mapping.
-- **Hybrid Training:** Classical optimization algorithms (Adam, SPSA) for quantum circuit parameter tuning.
-- **Benchmarks:** Real seismic inversion tasks using normalized Marmousi2 synthetic data as testbed.
+---
 
 ## Main Findings
 
 - QNN achieves rapid and stable convergence, effectively fitting training data and demonstrating some generalization on test sets.
 - VQR displays a more complex convergence process, with initial fluctuations but good overall accuracy.
 - Both models show that quantum intelligence can be applied to seismic inversion and have potential for more efficient subsurface imaging as quantum hardware matures.
+
+---
 
 ## Getting Started
 
@@ -49,6 +55,10 @@ Core code, tutorials, and experimental notebooks will be released soon!
 - Qiskit >= 1.3.1
 - qiskit-machine-learning >= 0.8.2
 
+See `docs/` for user guides, API documentation, and contribution instructions (coming soon).
+
+---
+
 ## License
 
 This project is licensed under the Apache License 2.0.  
@@ -59,7 +69,7 @@ The code builds upon Qiskit, which is © IBM 2017–2025, Apache 2.0.
 
 ## Citation
 
-If you use this code or reference the results, please cite:  
+If you use this platform or reference the results, please cite:  
 `Zhen Liu, Junhua Zhang. Application of Quantum Neural Networks and Variational Quantum Regression in Seismic Inversion. IMAGE 2025 Conference, 2025, Houston, US. https://imageevent.aapg.org/portals/26/abstracts/2025/4301526.pdf`
 
 **BibTeX:**
@@ -74,4 +84,11 @@ If you use this code or reference the results, please cite:
 }
 ```
 
-**For questions, feedback, or collaboration, please open an issue or contact the maintainer.**
+## Community & Contribution
+
+We welcome issues, feature requests, pull requests, and discussions!
+See CONTRIBUTING.md (coming soon) for guidelines, or open an issue to start a conversation.
+
+## Pioneering the next generation of quantum geophysical intelligence — join us!
+
+**This platform is under active development. Stay tuned!**
